@@ -1,14 +1,26 @@
 <!doctype html>
 <html>
   <head>
-  </head>
-  <body>
-
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- look up why i do this again -->
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/AudioFade.js"></script>
-    <script>
+  </head>
+  <body>
+    <div id="fullpage">
+      <div id="firstsoundbox">
+        <audio id="firstsound" src="media/hey.wav"></audio>
+      </div>
+    </div>
 
+    <script>
+      $(function() {
+        var a = new AudioFade('#firstsound', 500, 1000).init();
+      });
     </script>
+
+
   </body>
 </html>

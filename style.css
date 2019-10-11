@@ -1,0 +1,12 @@
+#fullpage {
+  height: 4000px;
+  width: 100%;
+  background-color: lightyellow;
+}
+
+#firstsoundbox {
+  height: 500px;
+  width: 100%;
+  background-color: lightgreen;
+  margin-top: 100vh;
+}
