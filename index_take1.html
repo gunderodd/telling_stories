@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- based on https://www.youtube.com/watch?v=NfyoDgszas0 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- look up why i do this again -->
+    <link rel="stylesheet" type="text/css" href="style_take1.css">
+  </head>
+  <body>
+
+    <audio id="audioPlayer2" src="media/theramin.mp3" type="audio" onclick="changeColor()" controls>
+    </audio>
+
+    <div id="blue"></div>
+
+    <div id="yellow"></div>
+
+    <div id="red"></div>
+
+    <div id="purple"></div>
+
+    <img id="mice" src="media/mice_strings.png">
+
+    <nav>
+      <!-- <button onclick="window.location.href = '#scrollSpace';"></button> -->
+      <button id="menu" onclick="toggleMenu()">O</button>
+      <ul id="menu-box">
+        <li><audio id="audioPlayer" src="media/first_story.mp3" type="audio" onclick="changeColor()" controls>Play</audio></li>
+        <li><a href="">Back</a></li>
+        <li><a href="#scrollSpace">Next</a></li>
+      </ul>
+    </nav>
+
+    <img id="bubble" src="media/bubble_top.png">
+
+
+
+    <div id="scrollSpace">
+
+      <nav id="menu" onclick="toggleMenu()"> Menu</nav>
+      <ul id="menu-box" style="display: none">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="animal.html">Animal</a></li>
+        <li><a href="pictures.html">Pictures</a></li>
+      </ul>
+
+    </div>
+
+    <!-- <script>
+    const audio = document.getElementById("audioPlayer");
+
+    // show yellow square after 1sec (1000 millisec) of audio playback
+    audio.onplay = () => {
+      setTimeout( () => {
+        document.getElementById("yellow").style.display = "block";
+      }, 1000);
+    };
+
+    </script> -->
+
+    <script src="js/audio_trigger.js"></script>
+    <script src="js/click_trigger.js"></script>
+  </body>
+</html>

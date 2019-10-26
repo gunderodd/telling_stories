@@ -1,0 +1,114 @@
+html {
+  user-select: none;
+  -webkit-tap-highlight-color:transparent;
+}
+
+body {
+  background-color: lightblue;
+  user-select: none;
+}
+
+#blue {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+#yellow {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position: absolute;
+  top: 8px;
+  display: none;
+}
+
+#red {
+  width: 300px;
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  right: 8px;
+  display: none;
+}
+
+#purple {
+  width: 600px;
+  height: 600px;
+  background-color: purple;
+  position: absolute;
+  bottom: 8px;
+  display: none;
+}
+
+#audioPlayer {
+  width: 200px;
+}
+
+#audioPlayer2 {
+  position: absolute;
+  left: 600px;
+  bottom: 10px;
+}
+
+#mice {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+#scrollSpace {
+  height: 100vh;
+  border: 1px solid black;
+  position: relative;
+  bottom: -100vh;
+}
+
+nav {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  position: relative;
+  right: 440px;
+  top: 80px;
+  float: right;
+  /* display: none; */
+}
+
+button {
+  background-color: rgba(0,0,0,.1);
+  border: none;
+  cursor: help;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+
+}
+
+#bubble {
+  width: 300px;
+  height: auto;
+  left: 50vw;
+  top: 10vh;
+  position: relative;
+  transform: scaleX(-1);
+  display: none;
+}
+
+#menu {
+  display: grid;
+}
+
+#menu-box {
+  border: 2px solid red;
+  background-image: url("media/bubble_top.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  list-style: none;
+  display: none;
+}

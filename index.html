@@ -1,26 +1,43 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- look up why i do this again -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/AudioFade.js"></script>
+    <title></title>
   </head>
   <body>
-    <div id="fullpage">
-      <div id="firstsoundbox">
-        <audio id="firstsound" src="media/hey.wav"></audio>
-      </div>
+
+
+    
+
+    <div class="panel" id="introduction">
     </div>
 
-    <script>
-      $(function() {
-        var a = new AudioFade('#firstsound', 500, 1000).init();
-      });
-    </script>
+    <div class="panel" id="page1">
+    </div>
+
+    <div class="panel" id="page2">
+    </div>
+
+    <div class="panel" id="page3">
+    </div>
+
+    <div class="panel" id="page4">
+    </div>
+
+    <div class="panel" id="page5">
+    </div>
 
 
+
+
+
+
+
+
+
+    <script src="js/audio_trigger.js"></script>
+    <script src="js/click_trigger.js"></script>
   </body>
 </html>
