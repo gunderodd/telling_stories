@@ -1,13 +1,51 @@
 /* basic page setup and universal elements */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  outline: none;
+}
 
 
 
+#pageFrame {
+  width: 100%;
+  border: 1px solid yellow;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
 
 
 /* panel setup and individual page variations */
 
+.panel {
+  display: inline-block;
+  border: 2px solid red;
+  height: 100vh;
+  width: 175vh;
+}
 
+#introduction {
+  background-image: url("media/mice_strings.png");
+  background-size: cover;
+
+}
 
 
 

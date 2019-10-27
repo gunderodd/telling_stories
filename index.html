@@ -4,32 +4,96 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="menu_style.css">
+    <title>Telling Stories - A comic adaptation of the piece by TheraminTrees</title>
   </head>
   <body>
 
 
-    
+    <div id="pageFrame">  <!-- wrap for entire site content -->
 
-    <div class="panel" id="introduction">
-    </div>
-
-    <div class="panel" id="page1">
-    </div>
-
-    <div class="panel" id="page2">
-    </div>
-
-    <div class="panel" id="page3">
-    </div>
-
-    <div class="panel" id="page4">
-    </div>
-
-    <div class="panel" id="page5">
-    </div>
+      <div class="panel" id="introduction">
+        <div style="width: 10vh; height: 10vh; position: relative; border: 1px solid red; left: 16vh;"></div>
+        <div style="width: 10vh; height: 10vh; position: relative; border: 1px solid blue; top: 55vh; left: 30vh;"></div>
 
 
+        <button id="menu-button-i" onclick="toggleMenuI()">o</button>
+        <div id="menu-image-i">
+          <ul id="menu-box-i">
+            <li><audio id="audioPlayer-i" src="media/audio/theramin.mp3" type="audio" controls>Play</audio></li>
+            <li><span style="color: darkgray;">&larr;</span></li>
+            <li><a href="#page1">&rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="panel" id="page1">
+
+
+        <button id="menu-button-1" onclick="toggleMenu1()">o</button>
+        <div id="menu-image-1">
+          <ul id="menu-box-1">
+            <li><audio id="audioPlayer-1" src="media/audio/first_story.mp3" type="audio" controls>Play</audio></li>
+            <li><a href="#introduction">&larr;</a></li>
+            <li><a href="#page2">&rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="panel" id="page2">
+
+
+        <button id="menu-button-2" onclick="toggleMenu2()">o</button>
+        <div id="menu-image-2">
+          <ul id="menu-box-2">
+            <li><audio id="audioPlayer-2" src="media/audio/second_story.mp3" type="audio" controls>Play</audio></li>
+            <li><a href="#page1">&larr;</a></li>
+            <li><a href="#page3">&rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="panel" id="page3">
+
+        <button id="menu-button-3" onclick="toggleMenu3()">o</button>
+        <div id="menu-image-3">
+          <ul id="menu-box-3">
+            <li><audio id="audioPlayer-3" src="media/audio/third_story.mp3" type="audio" controls>Play</audio></li>
+            <li><a href="#page2">&larr;</a></li>
+            <li><a href="#page4">&rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="panel" id="page4">
+
+        <button id="menu-button-4" onclick="toggleMenu4()">o</button>
+        <div id="menu-image-4">
+          <ul id="menu-box-4">
+            <li><audio id="audioPlayer-4" src="media/audio/fourth_story.mp3" type="audio" controls>Play</audio></li>
+            <li><a href="#page3">&larr;</a></li>
+            <li><a href="#page5">&rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="panel" id="page5">
+
+        <button id="menu-button-5" onclick="toggleMenu5()">o</button>
+        <div id="menu-image-5">
+          <ul id="menu-box-5">
+            <li><audio id="audioPlayer-5" src="media/audio/conclusion.mp3" type="audio" controls>Play</audio></li>
+            <li><a href="#page4">&larr;</a></li>
+            <li><span style="color: darkgray;">&rarr;</span></li>
+          </ul>
+        </div>
+
+      </div>
 
 
 
@@ -37,6 +101,8 @@
 
 
 
+
+    </div>  <!-- end of pageFrame -->
     <script src="js/audio_trigger.js"></script>
     <script src="js/click_trigger.js"></script>
   </body>
